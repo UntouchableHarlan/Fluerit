@@ -8,7 +8,11 @@
     <% end %>
   </div>
   <div class="" id="giphy-div">
-    <iframe src="<%= @flirt_giphy.embed_url.to_s %>" width="" height="" id="giphy"></iframe>
+    <% @flirt_giphy.embed_url.to_s %>
+    <% pic = @flirt_giphy.embed_url.to_s %>
+    <% pic = pic.split("http://")[1] %>
+    <% pic = pic.to_s.prepend("https://") %>
+    <iframe src="<%= pic %>" width="" height="" id="giphy"></iframe>
   </div>
   <div class="" id="button">
     <%= link_to "Flirt!", search_path, class: "btn btn-success btn-lg", id: "flirt" %>

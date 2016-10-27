@@ -6,6 +6,8 @@ class StaticController < ApplicationController
   def search
     @quote = Flirt.all.sample
     @flirt_giphy = Giphy.search("flirt", {limit: 50, offset: 25}).sample
+    # @flirt_giphy = @flirt_giphy.split("http://")[1]
+    # @flirt_giphy = "https://" + @flirt_giphy
     response = { :quote => @quote, :giphy => @flirt_giphy }
     respond_to do |format|
         format.json { render json: response }
