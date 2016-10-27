@@ -1,0 +1,10 @@
+<div class="well" id="flirt-quote">
+  <% if @quote %>
+  <p id="quote">
+    <%= @quote.quote %>
+  </p>
+  <% end %>
+</div>
+<div class="" id="giphy">
+  <iframe src="<%= @flirt_giphy.sample.embed_url.to_s %>" width="" height=""></iframe>
+</div>

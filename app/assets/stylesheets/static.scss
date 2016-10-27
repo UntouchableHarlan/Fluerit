@@ -1,0 +1,25 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar {
+  position: relative;
+}
+
+.navbar-brand {
+    position: relative;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+    font-size: 1.55rem !important;
+}
+
+.container {
+  padding-top: 3%;
+}
+
+#button, #flirt-quote, #giphy-div, #add_quote {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}

@@ -1,0 +1,2 @@
+class Flirt < ApplicationRecord
+end

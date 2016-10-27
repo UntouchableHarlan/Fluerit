@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="well" id="flirt-quote">
+    <% if @quote %>
+    <p id="quote">
+      <%= @quote.quote %>
+    </p>
+    <% end %>
+  </div>
+  <div class="" id="giphy-div">
+    <iframe src="<%= @flirt_giphy.embed_url.to_s %>" width="" height="" id="giphy"></iframe>
+  </div>
+  <div class="" id="button">
+    <%= link_to "Flirt!", search_path, class: "btn btn-success btn-lg", id: "flirt" %>
+  </div>
+  <div class="form-group row no-padding text-center col-md-12" id="add_quote">
+    <%= render 'flirts/new' %>
+  </div>
+</div>
