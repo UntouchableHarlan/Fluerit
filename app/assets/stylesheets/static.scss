@@ -18,8 +18,12 @@
   padding-top: 3%;
 }
 
-#button, #flirt-quote, #giphy-div, #add_quote {
+#button, #flirt-quote, #giphy-div {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+}
+
+#add_quote {
+  padding-left: 9%;
 }
